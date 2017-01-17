@@ -1,6 +1,7 @@
-//setting varibles
+//Setting constants
 var DATA_URL = "https://api.myjson.com/bins/ho58r​",
     data;
+//Initial load call
 getData(DATA_URL);
 
 /**
