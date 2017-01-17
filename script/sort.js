@@ -26,8 +26,10 @@
           */
          value: function(data) {
              dataObj = {};
-             Object.values(data)
-                 .sort(function(a, b) { return a - b })
+             var vals = Object.keys(data).map(function(key) {
+                 return data[key];
+             });
+             vals.sort(function(a, b) { return a - b })
                  .forEach(function(v, i) {
                      var ky = "";
                      Object.keys(data).forEach(function(k, i) {
@@ -42,4 +44,5 @@
              return dataObj;
          }
      }
+
  })();

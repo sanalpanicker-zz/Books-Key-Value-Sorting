@@ -11,9 +11,11 @@ getData(DATA_URL);
  */
 
 function displayData(data) {
+    //getting val arrays to form the chart
+    var val_arr = Object.keys(data).map(function(key) { return data[key]; })
     var template = "";
     for (var i = 0; i < Object.keys(data).length; i++) {
-        template += "<li><label class='key'>" + Object.keys(data)[i] + "</label><progress value='" + Object.values(data)[i] + "' max='" + Math.max.apply(Math, Object.values(data)) + "'></progress><label class='value'>" + Object.values(data)[i] + "</label><li>";
+        template += "<li><label class='key'>" + Object.keys(data)[i] + "</label><progress value='" + val_arr[i] + "' max='" + Math.max.apply(Math, val_arr) + "'></progress><label class='value'>" + val_arr[i] + "</label><li>";
     }
     $('#bar_chart').html(template);
 }
