@@ -4,12 +4,22 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style/app.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="script/app.js"></script>
+
 </head>
 
 <body>
+    <div id="wrapper">
+        <div class="header">
+            <div class="sort">
 
-    <ul id="bar-chart"></ul>
+                <label class="key gener">Book geners</label><span class="spacer"></span><label>Sort By : <span class="name" onclick="clickTrigger('name')">Name</span> | <span class="book" onclick="clickTrigger('book')">Books</span></label></div>
+        </div>
+        <div class="data">
+            <ul id="bar_chart"></ul>
+        </div>
+    </div>
+    <script src="script/sort.js"></script>
+    <script src="script/app.js"></script>
 
 </body>
 

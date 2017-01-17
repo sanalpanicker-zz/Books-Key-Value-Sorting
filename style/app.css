@@ -1,0 +1,73 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrapper {
+    margin-top: 5%;
+    margin-left: 30%;
+    width: 30%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.sort {
+    color: gray;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+label {
+    vertical-align: top;
+    display: inline-block;
+}
+
+label.key {
+    width: 30%;
+    text-align: left;
+    margin-bottom: 13px;
+}
+
+label.value {
+    width: 10%;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.spacer {
+    width: 40%;
+    display: inline-block;
+}
+
+progress {
+    margin-bottom: 5px;
+    WIDTH: 60%;
+    HEIGHT: 25PX;
+    -webkit-appearance: none;
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+}
+
+progress::-webkit-progress-value {
+    background: #3498db;
+}
+
+.gener {
+    font-size: 20px;
+    color: #3498db;
+}
+
+span.book:hover,
+span.name:hover {
+    color: #3498db;
+    cursor: pointer;
+}
